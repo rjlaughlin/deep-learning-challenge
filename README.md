@@ -1,6 +1,4 @@
-# deep-learning-challenge
-
-Deep Learning Challenge: Neural Network Model for Alphabet Soup
+# Deep Learning Challenge: Neural Network Model for Alphabet Soup
 
 ## Overview
 
@@ -10,11 +8,9 @@ The purpose of this analysis is to develop a neural network model that predicts 
 
 ### Data Preprocessing
 
-Target Variable: IS_SUCCESSFUL (Binary classification: successful or not)
-
-Feature Variables: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT
-
-Removed Variables: EIN and NAME (Identification fields that do not contribute to prediction accuracy.)
+Target Variable: `IS_SUCCESSFUL` (Binary classification: successful or not)
+Feature Variables: `APPLICATION_TYPE`, `AFFILIATION`, `CLASSIFICATION`, `USE_CASE`, `ORGANIZATION`, `STATUS`, `INCOME_AMT`, `SPECIAL_CONSIDERATIONS`, `ASK_AMT`
+Removed Variables: `EIN` and `NAME` (Identification fields that do not contribute to prediction accuracy.)
 
 ### Compiling, Training, and Evaluating the Model
 
@@ -23,7 +19,6 @@ Input Features: Based on the preprocessed dataset.
 First Hidden Layer: 16 neurons, ReLU activation function.
 Second Hidden Layer: 8 neurons, ReLU activation function.
 Output Layer: 1 neuron, Sigmoid activation function.
-
 
 ##### Model Compilation
 Loss Function: binary_crossentropy
@@ -47,6 +42,6 @@ To improve the model's accuracy, several adjustments were made:
 
 Despite these optimizations, the highest accuracy achieved was just above 72%, falling short of the 75% target.
 
-Summary and Recommendations
+## Summary
 The deep learning model showed some predictive ability but did not reach the target accuracy of 75%. Alternative models that might perform better include supervised learning models like SVM, Random Forest, or KNN to classify successful vs. unsuccessful companies.
 
